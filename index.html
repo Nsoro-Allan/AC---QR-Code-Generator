@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC - QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/icon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>
+          <img src="./imgs/icon_64.png" alt="">
+          <h1>AC - QR Code Generator</h1>
+          <div class="line"></div>
+          <p>Paste a URL or enter text to create its QR code.</p>
+        </header>
+        <div class="form">
+          <input type="text" spellcheck="false" placeholder="Enter your text or URL..">
+          <button id="generateBtn">Generate QR Code</button>
+        </div>
+        <div class="qr-code">
+          <div class="long-line"></div>  
+          <img id="qrImg" alt="qr-code">
+          <a id="downloadLink" target="_blank" style="display: none;" download="qrcode.png">Download QR Code</a>
+        </div>
+      </div>
+      
+
+    <script src="./script.js"></script>
+</body>
+</html>
